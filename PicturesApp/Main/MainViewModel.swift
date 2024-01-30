@@ -29,7 +29,7 @@ final class MainViewModel: ObservableObject {
                             switch result {
                             case .success(let image):
                                 self.pictures[index].image = image
-                            case .failure(let error):
+                            case .failure(_):
                                 notFetchedIds.append(index)
                             }
                         }
